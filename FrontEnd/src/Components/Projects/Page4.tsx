@@ -27,7 +27,7 @@ const Page4: React.FC<Page4Props> = ({ projects }) => {
             key={index}
             heading={proj.Name}
             subheading={proj.Project_Discription}
-            imgSrc={`http://localhost:8000/api/photo/${proj.ProjectPhoto}`}
+            imgSrc={`http://51.20.130.55/api/photo/${proj.ProjectPhoto}`}
             href="#"
           />
         ))}

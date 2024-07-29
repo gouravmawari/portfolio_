@@ -61,19 +61,19 @@ const UserForm: React.FC = () => {
 
     if (data.userPhoto) {
       formData.append('userPhoto', data.userPhoto);
-      console.log('userPhoto', data.userPhoto)
+
     }
 
     data.skills.forEach((skill, index) => {
       formData.append(`Skills[${index}]`, skill);
-      console.log(`Skills[${index}]`, skill);
+
     });
 
     data.experience.forEach((exp, index) => {
       formData.append(`Experiences[${index}][Company_Name]`, exp.companyName);
       formData.append(`Experiences[${index}][Website_URL]`, exp.websiteUrl);
       formData.append(`Experiences[${index}][Discription]`, exp.description);
-      console.log(`Experiences[${index}][Discription]`, exp.description)
+
     });
 
     data.projects.forEach((project, index) => {
@@ -81,16 +81,15 @@ const UserForm: React.FC = () => {
       formData.append(`Projects[${index}][Project_Discription]`, project.projectDescription);
       if (project.photo) {
         formData.append(`projectPhotos`, project.photo);
-        console.log(`projectPhotos`, project.photo)
+
         
       }
     });
-    console.log(formData);
     try {
-      const response = await axios.post('http://localhost:8000/api/create-user-profile', formData, {
+      const response = await axios.post('http://51.20.130.55/api/create-user-profile', formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
-      console.log('Response:', response.data);
+
       navigate('/login');
     } catch (error) {
       console.error('Error:', error);

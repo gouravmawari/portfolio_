@@ -20,7 +20,7 @@ const Signup: React.FC = () => {
 
     try {
       
-      const response = await axios.post('http://localhost:8000/api/Register', userData);
+      const response = await axios.post('http://51.20.130.55/api/Register', userData);
       console.log('User registered successfully:', response.data);
       
       navigate('/form');

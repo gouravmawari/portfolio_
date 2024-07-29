@@ -7,8 +7,7 @@ interface Page2Props {
 }
 
 const Page2: React.FC<Page2Props> = ({ skills }) => {
-  console.log("skills page darta")
-  console.log(skills)
+
 
   const displayedSkills = skills.slice(0, 10);
   const firstRow = displayedSkills.slice(0, 5);

@@ -33,9 +33,6 @@ const Page3: React.FC<Page3Props> = ({ experience }) => {
                   <h6 className="block mb-2 font-sans text-lg antialiased font-medium leading-snug tracking-normal text-blue-gray-900">
                   {exp.Discription}
                   </h6>
-                  {/* <p className="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
-                    
-                  </p> */}
                 </div>
                 <div className="p-6 pt-0">
                   <a
@@ -96,9 +93,6 @@ const Page3: React.FC<Page3Props> = ({ experience }) => {
                       <h6 className="block mb-2 font-sans text-lg antialiased font-medium leading-snug tracking-normal text-blue-gray-900">
                       {exp.Discription}
                       </h6>
-                      {/* <p className="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
-                        
-                      </p> */}
                     </div>
                     <div className="p-6 pt-0">
                       <a

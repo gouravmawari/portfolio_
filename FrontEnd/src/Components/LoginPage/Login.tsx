@@ -18,9 +18,10 @@ const Login: React.FC = () => {
     };
 
     try {
-      const response = await axios.post('http://localhost:8000/api/login', loginData);
+      // const response = await axios.post('http://localhost:8000/api/login', loginData);
+      const response = await axios.post('http://51.20.130.55/api/login', loginData);
       const data = response.data;
-      console.log(data)
+
       const profileData = {
         userId: data._id,
         name: data.Name,

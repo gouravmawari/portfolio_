@@ -40,7 +40,7 @@ const View: React.FC = () => {
   useEffect(() => {
     const fetchUserData = async () => {
       try {
-        const response = await fetch(`http://localhost:8000/api/showprofile?target_id=${id}`);
+        const response = await fetch(`http://51.20.130.55/api/showprofile?target_id=${id}`);
         const data: UserProfile = await response.json();
         
         const photoFilename = data.Photo.split('\\').pop().split('/').pop();
@@ -81,7 +81,7 @@ const View: React.FC = () => {
           <div className="content flex items-start justify-between w-full">
             <div className="flex flex-col items-start animate-slidein700 opacity-0 photobaby">
               <img
-                src={`http://localhost:8000/api/photo/${Photo}`} 
+                src={`http://51.20.130.55/api/photo/${Photo}`} 
                 alt="Profile"
                 className="w-32 h-32 rounded-full object-cover mb-2"
               />

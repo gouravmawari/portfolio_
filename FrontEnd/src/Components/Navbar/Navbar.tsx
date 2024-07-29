@@ -30,7 +30,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
     if (searchQuery.trim()) {
       try {
-        const response = await fetch(`http://localhost:8000/api/find?name1=${searchQuery}`);
+        // const response = await fetch(`http://localhost:8000/api/find?name1=${searchQuery}`);
+        const response = await fetch(`http://51.20.130.55/api/find?name1=${searchQuery}`);
         const data: User[] = await response.json();
         
         // Extract filenames for each user in the search results
@@ -55,7 +56,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <nav className="navbar">
         <div className="navbar-left">
           <img 
-            src={`http://localhost:8000/api/photo/${photoFilename}`} 
+            // src={`http://localhost:8000/api/photo/${photoFilename}`} 
+            src={`http://51.20.130.55/api/photo/${photoFilename}`}
             alt="Profile" 
             className="navbar-profile-photo"
           />

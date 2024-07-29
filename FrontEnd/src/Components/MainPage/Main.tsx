@@ -14,7 +14,6 @@ const Main: React.FC = () => {
   const { userProfile, setUserProfile } = useUserStore();
   const [responseData, setResponseData] = useState(userProfile);
   const navigate = useNavigate();
-  console.log("here is user profile")
   console.log(userProfile);
 
   useEffect(() => {
@@ -41,8 +40,7 @@ const Main: React.FC = () => {
   };
 
   const { name, skills, description, experience, projects, Photo, GithubLink, Linkedin } = responseData;
-  console.log("here is profile skills data");
-console.log(skills)
+
   const truncateDescription = (text: string, maxWords: number) => {
     const words = text.split(' ');
     if (words.length > maxWords) {
@@ -58,7 +56,8 @@ console.log(skills)
           <div className="content flex items-start justify-between w-full">
             <div className="flex flex-col items-start animate-slidein700 opacity-0 photobaby">
               <img
-                src={`http://localhost:8000/api/photo/${Photo}`}
+                // src={`http://localhost:8000/api/photo/${Photo}`}
+                src={`http://51.20.130.55/api/photo/${Photo}`}
                 alt="Profile"
                 className="w-32 h-32 rounded-full object-cover mb-2"
               />

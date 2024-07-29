@@ -32,7 +32,7 @@ const Register: React.FC<RegisterProps> = ({ setResponseData }) => {
     }
 
     try {
-      const response = await fetch('http://localhost:8000/api/Register', {
+      const response = await fetch('http://51.20.130.55/api/Register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
