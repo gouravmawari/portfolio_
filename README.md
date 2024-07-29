@@ -7,15 +7,18 @@ Directory Structure
 
 ##Installation Instructions
 #Backend
+
+
+
 #Navigate to the server directory:
-command
+*************command************
 cd Backend
 cd server
 #Install the required dependencies:
 command
 npm install
 #Build and start the backend server:
-command
+**************command************
 npm run build
 npm run start
 #Dependencies
@@ -36,7 +39,7 @@ typescript: ^5.5.3
 
 ####FrontEnd
 
-command
+************command************
 cd FrontEnd
 npm install
 
