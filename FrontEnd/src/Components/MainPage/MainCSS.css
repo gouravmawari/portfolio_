@@ -1,0 +1,188 @@
+
+.photobaby img {
+  width: 300px; 
+  height: 300px; 
+  border-radius: 50%;
+  object-cover: cover;
+  position: relative;
+  left: 140px;
+}
+
+.Name {
+  position: relative;
+  top: 15px;
+  left: 200px;
+  font-size: 1.4pc;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Discription {
+  text-align: center;
+  position: relative;
+  right: 90px;
+  font-size: 2pc;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-shadow: 3px 9px 8px rgba(0, 0, 0, 0.5);
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(to right, #3b82f6, #1e3a8a, #1f2937);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#root {
+  width: 100%;
+  overflow-y: auto;
+}
+
+.main-container {
+  width: 100%;
+  overflow-y: auto;
+}
+
+.section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.bg-split {
+  background: #a8a29e;
+}
+
+.bg-split::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 50%;
+  bottom: 0;
+  left: 0;
+  background: #09068f;
+}
+
+.bg-split::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 50%;
+  background: #020d4b;
+}
+
+.content {
+  text-align: center;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.Cambria {
+  font-family: 'Cambria', serif;
+}
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 10px 20px;
+  color: white;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-profile-photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.navbar-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-search-bar {
+  padding: 5px;
+  margin-right: 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.navbar-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.navbar-links li a:hover {
+  text-decoration: underline;
+}
+
+
+.section {
+  padding: 2rem;
+  background: #020202; 
+}
+.linkedin{
+  position: relative;
+  left: 33px;
+  bottom: 33px;
+  }
+  .github{
+  position: relative;
+  left: 33px;
+  bottom: 33px;
+  }
+  .gmail{
+  position: relative;
+  bottom: 33px;
+  left: 33px;
+  }

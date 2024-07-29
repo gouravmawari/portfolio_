@@ -1,0 +1,33 @@
+.skills {
+    position: relative;
+    bottom: 100px;
+  }
+  
+  .list {
+    position: relative;
+    top: 33px;
+  }
+  
+  .secondRow {
+    position: relative;
+    top: 100px;
+  }
+  
+  .bg-gradient-to-r {
+    background: linear-gradient(to right, #a8a29e 50%, #404040 50%);
+  }
+  
+  .skill-icon {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin: 0 auto; 
+  }
+  
+  .skill-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; 
+  }
+  
